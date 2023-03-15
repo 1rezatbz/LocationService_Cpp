@@ -10,5 +10,8 @@
 using namespace std;
 int main(){
     cout<<"hi"<<endl;
+    locationWifiPoints wifiAccess;
+    wifiAccess.getWifiNetworks();
+    char * jsonPayload = wifiAccess.buildRequestJSON();
     return 0;
 }
